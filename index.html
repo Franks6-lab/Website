@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="pippo.css">
+ 		<title></title>
+ 		<script>
+				var ScrollMsg= "Draughir Web Server "
+				var CharacterPosition=0;
+				function StartScrolling() {
+				document.title=ScrollMsg.substring(CharacterPosition,ScrollMsg.length)+
+				ScrollMsg.substring(0, CharacterPosition);
+				CharacterPosition++;
+				if(CharacterPosition > ScrollMsg.length) CharacterPosition=0;
+				window.setTimeout("StartScrolling()",150); }
+				StartScrolling();
+		</script>
+	</head>
+
+	<body>
+		<page>
+			<div class="con1">
+				<h1>Draughir Werb Server: <strong>STAY AWAY!</strong></h1>
+				<h3>This is a page made for fun so fuck off...</h3>
+				<p>L333337</p>
+			</div>
+		</page>
+	<canvas width="400" height="500" id="game"></canvas>
+
+	<script src="myscript.js"></script>
+
+	</body>
+</html>
